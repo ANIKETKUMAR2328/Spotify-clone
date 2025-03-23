@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/ANIKETKUMAR2328/Spotify-clone",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "tsc && vite build && git add dist -f && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
